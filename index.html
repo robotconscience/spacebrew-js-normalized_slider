@@ -43,9 +43,11 @@
 			sb.addPublish("slider1", "float_normalized", ".5");
 			sb.addPublish("slider2", "float_normalized", ".5");
 			sb.addPublish("slider3", "float_normalized", ".5");
+			sb.addPublish("slider4", "float_normalized", ".5");
 			sb.addSubscribe("slider1", "float_normalized");
 			sb.addSubscribe("slider2", "float_normalized");
 			sb.addSubscribe("slider3", "float_normalized");
+			sb.addSubscribe("slider4", "float_normalized");
 
 			// override Spacebrew events - this is how you catch events coming from Spacebrew
 			sb.onCustomMessage = onCustomMessage;
@@ -111,6 +113,8 @@
 			<input type="range" class="slider" name="slider" id="slider2" value=".5" min="0" max="1.0" step="0.01" />
 			<label for="slider3">Input Slider 3:</label>
 			<input type="range" class="slider" name="slider" id="slider3" value=".5" min="0" max="1.0" step="0.01"  />
+			<label for="slider4">Input Slider 4:</label>
+			<input type="range" class="slider" name="slider" id="slider4" value=".5" min="0" max="1.0" step="0.01"  />
 		</form>
 
 		</br></br>
